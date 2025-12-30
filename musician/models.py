@@ -4,7 +4,7 @@ from rest_framework.exceptions import ValidationError
 
 def age_validator(value):
     if value < 14:
-        raise ValidationError(f"age must be over 13 years old")
+        raise ValidationError(f"age must be over 13 years old, not {value}")
 
 
 class Musician(models.Model):
